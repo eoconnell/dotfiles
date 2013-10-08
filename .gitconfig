@@ -1,0 +1,13 @@
+[user]
+    name = Evan O'Connell
+    email = oconn.e@gmail.com
+[alias]
+    co = checkout
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[apply]
+    whitespace = nowarn
+[github]
+    user = eoconnell
