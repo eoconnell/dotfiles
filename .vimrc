@@ -17,6 +17,7 @@ set switchbuf=useopen
 set showtabline=2
 set winwidth=79
 " tell vim not to mess with the scrollback buffer
+" http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
 set number
 syntax on
@@ -24,6 +25,11 @@ filetype plugin indent on
 
 let mapleader=","
 
-set t_Co=256
-set background=dark
-color grb256
+:set t_Co=256
+:set background=dark
+:color grb256
+
+":set statusline=%<%f\ %({&ft})\ %-4(%m%)%=%-19(%31,%02%03V%)
+
+nmap gh <Plug>GitGutterNextHunk
+nmap gH <Plug>GitGutterPrevHunk
