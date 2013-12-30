@@ -11,3 +11,5 @@
     whitespace = nowarn
 [github]
     user = eoconnell
+[core]
+	excludesfile = ~/.gitignore
