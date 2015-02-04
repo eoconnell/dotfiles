@@ -24,7 +24,7 @@ export HISTSIZE=100000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 
-export EDITOR=vi
+export EDITOR=vim
 
 export ACK_COLOR_MATCH='red'
 
