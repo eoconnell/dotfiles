@@ -1,5 +1,6 @@
 execute pathogen#infect()
 
+set history=10000
 set expandtab
 set tabstop=2
 set shiftwidth=2
