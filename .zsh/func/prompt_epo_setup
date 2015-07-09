@@ -78,7 +78,7 @@ function prompt_epo_scm_time_since_commit() {
 
 function prompt_epo_scm_info() {
     if zgit_inworktree; then
-        echo "($(prompt_wunjo_scm_branch))"
+      echo "($(prompt_epo_scm_time_since_commit)|$(prompt_wunjo_scm_branch))"
     fi
 }
 
@@ -174,7 +174,7 @@ prompt_epo_setup() {
 #"
 	#PROMPT+="($pc[hist]%h$pc[reset])"
 	PROMPT+=":$pc[shortpath]%1~$pc[reset]"
-    PROMPT+="($pc[scm_branch]\$(prompt_wunjo_scm_branch)$pc[reset])"
+    PROMPT+="\$(prompt_epo_scm_info)"
 	PROMPT+=" $pc[#]\$$pc[reset] "
 
     #RPROMPT=

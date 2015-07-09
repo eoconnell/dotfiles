@@ -1,11 +1,12 @@
 execute pathogen#infect()
 
+set history=10000
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set autoindent
-set statusline=2
+set laststatus=2
 set showmatch
 set incsearch
 set hlsearch
@@ -29,7 +30,12 @@ let mapleader=","
 :set background=dark
 :color grb256
 
-":set statusline=%<%f\ %({&ft})\ %-4(%m%)%=%-19(%31,%02%03V%)
+:set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
 nmap gh <Plug>GitGutterNextHunk
 nmap gH <Plug>GitGutterPrevHunk
+
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
