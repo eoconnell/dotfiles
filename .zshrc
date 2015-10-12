@@ -19,7 +19,6 @@ alias sr="screen -r"
 alias c="cd"
 alias v="view -"
 alias vi="vim"
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 export GREP_OPTIONS="--color"
 export LESS='-R'

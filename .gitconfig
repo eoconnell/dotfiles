@@ -1,20 +1,21 @@
 [user]
-    name = Evan O'Connell
-    email = oconn.e@gmail.com
+  name = Evan O'Connell
+  email = oconn.e@gmail.com
 [alias]
-    co = checkout
-    st = status -sb
-    d = diff
-    dc = diff --cached
+  co = checkout
+  st = status -sb
+  d = diff
+  dc = diff --cached
+  l = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 [color]
-    diff = auto
-    status = auto
-    branch = auto
+  diff = auto
+  status = auto
+  branch = auto
 [apply]
-    whitespace = nowarn
+  whitespace = nowarn
 [github]
-    user = eoconnell
+  user = eoconnell
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [init]
   templatedir = ~/.git_template
