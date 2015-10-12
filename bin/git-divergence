@@ -23,7 +23,7 @@ git branch 2>/dev/null | grep -e '^*' | tr -d '\* '
  rev=$1
  git log -1 $rev --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
  echo
- git diff $rev^..$rev | diffstat
+ git diff $rev^..$rev | diffstat -C
  echo
  }
 
