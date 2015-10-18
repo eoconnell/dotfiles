@@ -12,7 +12,7 @@ export PATH="$HOME/bin:$PATH"
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 
-alias ls="ls --color=auto"
+alias ls="ls -G"
 alias l="ls -l"
 alias ll="ls -la"
 alias sr="screen -r"
