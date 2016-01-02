@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+  echo "Usage: rotldl <episode number>"
+  exit 1
+fi
+
+wget http://www.merlinmann.com/storage/rotl/rotl_`printf '%04d' $1`.mp3
