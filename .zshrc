@@ -8,8 +8,6 @@ prompt epo
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH="$HOME/bin:$PATH"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-
 alias ls="ls -G"
 alias l="ls -l"
 alias ll="ls -la"
@@ -33,6 +31,10 @@ function mcd() { mkdir -p $1 && cd $1 }
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Initialize jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # Initialize rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
