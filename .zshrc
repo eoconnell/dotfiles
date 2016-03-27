@@ -1,8 +1,6 @@
 setopt prompt_subst
 setopt promptsubst
 
-set -o vi
-
 autoload -U promptinit
 promptinit
 prompt epo
