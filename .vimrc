@@ -121,3 +121,16 @@ endfunction
 
 nnoremap <leader>f :call SelectaCommand("find ./* -type f", "", ":e")<cr>
 nnoremap <leader>g :call SelectaCommand("git ls-files", "", ":e")<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" TOGGLE BACKGROUND
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! ToggleBackground()
+  if &background == "dark"
+    set background=light
+  else
+    set background=dark
+  endif
+endfunction
+
+nnoremap <leader>bg :call ToggleBackground()<cr>
