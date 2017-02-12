@@ -8,15 +8,15 @@ prompt epo
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH="$HOME/bin:$PATH"
 
-alias ls="ls -G"
+alias ls="ls --color"
 alias l="ls -l"
 alias ll="ls -la"
 alias sr="screen -r"
 alias c="cd"
 alias v="view -"
 alias vi="vim"
+alias grep="grep --color"
 
-export GREP_OPTIONS="--color"
 export LESS='-R'
 
 export HISTSIZE=100000
