@@ -7,7 +7,7 @@
 # constants
   set $mod Mod1
 
-  set $wsp1  "1: "
+  set $wsp1  "1 "
   set $wsp2  2
   set $wsp3  3
   set $wsp4  4
@@ -25,7 +25,9 @@
   exec_always feh --bg-scale ${HOME}/Pictures/wallpaper
 
   # Tip: use xprop to find class names
-  assign [class="Firefox"] $wsp2
+  assign [class="Firefox"] $wsp1
+
+  exec firefox
 
 # window bindings
   bindsym $mod+Shift+q  kill
