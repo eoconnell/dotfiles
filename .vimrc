@@ -119,7 +119,7 @@ function! SelectaCommand(choice_command, selecta_args, vim_command)
   exec a:vim_command . " " . selection
 endfunction
 
-nnoremap <leader>f :call SelectaCommand("find ./* -type f", "", ":e")<cr>
+nnoremap <leader>f :call SelectaCommand("find . -type f -not -path \"*\\/.git*\"", "", ":e")<cr>
 nnoremap <leader>g :call SelectaCommand("git ls-files", "", ":e")<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
