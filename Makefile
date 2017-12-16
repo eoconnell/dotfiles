@@ -1,4 +1,4 @@
-.PHONY: dotfiles
+.PHONY: dotfiles uninstall
 
 dotfiles:
 
@@ -7,3 +7,11 @@ dotfiles:
 		ln --symbolic --force --no-dereference $$file $(HOME)/$$f; \
 	done;
 
+uninstall:
+
+	for file in $(shell find -L $(HOME) -xtype l); do \
+		d=$$(readlink $$file | xargs dirname); \
+		if [ $$d == $(CURDIR) ]; then \
+			unlink $$file; \
+		fi \
+	done;
