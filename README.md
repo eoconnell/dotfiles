@@ -1,6 +1,6 @@
 # dotfiles
 
-*Install*
+**Install**
 
 ```bash
 $ make # or make dotfiles
@@ -8,7 +8,7 @@ $ make # or make dotfiles
 
 Executing `make` will create symlinks from this repo to your home folder.
 
-*Uninstall*
+**Uninstall**
 
 ```bash
 $ make uninstall
