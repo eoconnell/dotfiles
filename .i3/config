@@ -4,8 +4,14 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# constants
+# GENERAL ################################
+
   set $mod Mod1
+  set $browser firefox
+  set $term urxvt
+  set $wallpaper ${HOME}/Pictures/wallpaper
+
+# WORKSPACES #############################
 
   set $wsp1  "1 "
   set $wsp2  2
@@ -22,13 +28,13 @@
   font pango:monospace 8
   floating_modifier $mod
 
-  exec_always feh --bg-scale ${HOME}/Pictures/wallpaper
+  exec_always feh --bg-scale $wallpaper
   exec compton
 
   # Tip: use xprop to find class names
   assign [class="Firefox"] $wsp1
 
-  exec firefox
+  exec $browser
 
 # window bindings
   bindsym $mod+Shift+q  kill
@@ -84,7 +90,7 @@
   bindsym $mod+Shift+r restart
 
 # program bindings
-  bindsym $mod+Return   exec urxvt
+  bindsym $mod+Return   exec $term
   bindsym Control+space exec rofi -show run
   bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
   bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
