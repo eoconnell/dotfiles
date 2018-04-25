@@ -1,10 +1,12 @@
-URxvt.font: xft:Inconsolata\\-g:pixelsize=18
+URxvt.font: xft:Hasklug Nerd Font Mono:pixelsize=14
 
 URxvt.scrollBar: false
 
-URxvt*background:                     #151718
+URxvt*background:                     #1b1d1e
 URxvt*foreground:                     #d6d6d6
 URxvt*cursorColor:                    #d6d6d6
+URxvt*borderWidth: 0
+URxvt*internalBorder: 24
 
 URxvt*color0:                         #151718
 URxvt*color1:                         #Cd3f45
