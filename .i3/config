@@ -24,6 +24,8 @@
   set $wsp9  9
   set $wsp10 10
 
+  bindsym $mod+Tab workspace back_and_forth
+
 # settings
   font pango:monospace 8
   floating_modifier $mod
