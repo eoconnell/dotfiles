@@ -108,7 +108,7 @@
 
 # program bindings
   bindsym $mod+Return   exec $term
-  bindsym Control+space exec rofi -show run
+  bindsym Control+space exec rofi -show drun -show-icons
   bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
   bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
   bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
