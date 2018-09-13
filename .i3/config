@@ -143,6 +143,6 @@
   bindsym $mod+Shift+0 move container to workspace $wsp10
 
 # bar
-#  bar {
-#    status_command i3status
-#  }
+ bar {
+   status_command i3status
+ }
