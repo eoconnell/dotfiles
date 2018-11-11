@@ -12,19 +12,19 @@
   set $wallpaper ${HOME}/Pictures/wallpaper
 
 # CONTAINERS #############################
-  for_window [class="^.*"] border pixel 0
-  for_window [title="^.*"] border pixel 0
+  # for_window [class="^.*"] border pixel 0
+  # for_window [title="^.*"] border pixel 0
 
-  hide_edge_borders both
+  # hide_edge_borders both
 
-  set $inner 32
-  set $outer 16
+  # set $inner 32
+  # set $outer 16
 
-  gaps inner $inner
-  gaps outer $outer
+  # gaps inner $inner
+  # gaps outer $outer
 
-  bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $outer
-  bindsym $mod+Ctrl+g exec pkill compton; gaps inner all set 0; gaps outer all set 0
+  # bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $outer
+  # bindsym $mod+Ctrl+g exec pkill compton; gaps inner all set 0; gaps outer all set 0
 
 # WORKSPACES #############################
 
