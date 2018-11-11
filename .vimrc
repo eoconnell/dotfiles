@@ -24,6 +24,7 @@ set winwidth=79
 " tell vim not to mess with the scrollback buffer
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
+set directory=~/.vim/swp//
 
 syntax on
 filetype plugin indent on
