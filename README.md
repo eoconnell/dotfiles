@@ -15,3 +15,11 @@ $ make uninstall
 ```
 
 This will remove all symlinks from your home folder to this repo.
+
+**Testing**
+
+```bash
+$ make test
+```
+
+This will run [ShellCheck](https://github.com/koalaman/shellcheck) analysis inside a container.
