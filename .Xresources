@@ -6,7 +6,7 @@ URxvt*background:                     #1b1d1e
 URxvt*foreground:                     #d6d6d6
 URxvt*cursorColor:                    #d6d6d6
 URxvt*borderWidth: 0
-URxvt*internalBorder: 24
+URxvt*internalBorder: 16
 
 URxvt*color0:                         #151718
 URxvt*color1:                         #Cd3f45
