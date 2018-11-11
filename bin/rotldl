@@ -5,4 +5,6 @@ if [ "$#" -ne 1 ]; then
   exit 1
 fi
 
-wget http://www.merlinmann.com/storage/rotl/rotl_`printf '%04d' $1`.mp3
+episode=$(printf '%04d' "$1")
+
+wget "http://www.merlinmann.com/storage/rotl/rotl_$episode.mp3"
