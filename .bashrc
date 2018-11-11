@@ -29,8 +29,8 @@ export EDITOR=vim
 
 export ACK_COLOR_MATCH='red'
 
-
-source ${HOME}/.zsh/func/.git-prompt.sh
+# shellcheck source=/dev/null
+source "${HOME}/.zsh/func/.git-prompt.sh"
 
 export GIT_PS1_HIDE_IF_PWD_IGNORED=1
 export GIT_PS1_SHOWCOLORHINTS=
@@ -41,6 +41,7 @@ export GIT_PS1_SHOWUPSTREAM=
 export GIT_PS1_STATESEPARATOR=" "
 
 reset="\\e[0m";
+bold="\\e[1m";
 red="\\e[1;31m";
 green="\\e[1;32m";
 yellow="\\e[1;33m";
