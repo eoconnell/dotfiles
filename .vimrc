@@ -26,6 +26,10 @@ set winwidth=79
 set t_ti= t_te=
 set directory=~/.vim/swp//
 
+" change cursor in insert mode
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[2 q"
+
 syntax on
 filetype plugin indent on
 
@@ -63,6 +67,12 @@ augroup vimrcEx
   autocmd FileType ruby,haml,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
   autocmd FileType php set ai sw=4 sts=4 et
+augroup END
+
+augroup FastEscape
+  autocmd!
+  au InsertEnter * set timeoutlen=0
+  au InsertLeave * set timeoutlen=1000
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
