@@ -3,37 +3,48 @@ URxvt.font: xft:Hasklug Nerd Font Mono:pixelsize=14
 URxvt.scrollBar: false
 URxvt*cursorBlink: true
 
-URxvt*background:                     #1b1d1e
-URxvt*foreground:                     #d6d6d6
-URxvt*cursorColor:                    #d6d6d6
 URxvt*borderWidth: 0
 URxvt*internalBorder: 16
 
-URxvt*color0:                         #151718
-URxvt*color1:                         #Cd3f45
-URxvt*color2:                         #9fca56
-URxvt*color3:                         #e6cd69
-URxvt*color4:                         #55b5db
-URxvt*color5:                         #a074c4
-URxvt*color6:                         #55dbbe
-URxvt*color7:                         #d6d6d6
-URxvt*color8:                         #41535B
-URxvt*color9:                         #Cd3f45
-URxvt*color10:                        #9fca56
-URxvt*color11:                        #e6cd69
-URxvt*color12:                        #55b5db
-URxvt*color13:                        #a074c4
-URxvt*color14:                        #55dbbe
-URxvt*color15:                        #ffffff
+#include ".Xbase16/solarized_dark.Xresources"
+
+*background: base00
+*foreground: base05
+*cursorColor: base05
+
+*color0:  base00
+*color1:  base08
+*color2:  base0B
+*color3:  base0A
+*color4:  base0D
+*color5:  base0E
+*color6:  base0C
+*color7:  base05
+
+*color8:  base03
+*color9:  base08
+*color10: base0B
+*color11: base0A
+*color12: base0D
+*color13: base0E
+*color14: base0C
+*color15: base07
+
+*color16: base09
+*color17: base0F
+*color18: base01
+*color19: base02
+*color20: base04
+*color21: base06
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #273238, #273238, #1e2529
-rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
-rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
-rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+rofi.color-window: base01, base01, base00
+rofi.color-normal: base01, base05, base01, base01, base07
+rofi.color-active: base01, base0D, base01, base01, base0D
+rofi.color-urgent: base01, base08, base01, base01, base08
 
 ! ------------------------------------------------------------------------------
 ! Copy/Paste
