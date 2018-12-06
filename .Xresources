@@ -60,7 +60,6 @@ URxvt.perl-ext-common: default,matcher,clipboard,font-size
 
 URxvt.keysym.C-C: perl:clipboard:copy
 URxvt.keysym.C-V: perl:clipboard:paste
-URxvt.keysym.Control-V: perl:clipboard:paste
 
-URxvt.keysym.C-equal: perl:font-size:increase
-URxvt.keysym.C-minus: perl:font-size:decrease
+URxvt.keysym.M-equal: perl:font-size:increase
+URxvt.keysym.M-minus: perl:font-size:decrease
