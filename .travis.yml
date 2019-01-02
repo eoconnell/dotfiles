@@ -5,5 +5,9 @@ language: bash
 services:
   - docker
 
+env:
+  - FOOBAR=quxbaz
+
 script:
+  - echo $FOOBAR
   - make test
