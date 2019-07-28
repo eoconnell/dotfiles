@@ -1,4 +1,4 @@
-URxvt.font: xft:Hasklug Nerd Font Mono:pixelsize=14
+URxvt.font: xft:Iosevka Term:style=Regular:pixelsize=14
 
 URxvt.scrollBar: false
 URxvt*cursorBlink: true
