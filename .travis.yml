@@ -1,9 +1,12 @@
-sudo: required
-
 language: bash
 
-services:
-  - docker
-
 script:
-  - make test
+  - echo 'Does this fail fast?'
+  - thisshouldfail
+  - echo 'Does this run?'
+
+after_success:
+  - echo 'SUCCESS!'
+
+after_failure:
+  - echo 'FAILURE!'
