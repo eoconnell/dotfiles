@@ -7,6 +7,14 @@ bin:
 		sudo ln --symbolic --force $$file /usr/local/bin/$$f; \
 	done;
 
+.PHONY: config
+config:
+
+	for file in $(shell find $(CURDIR)/config/* -maxdepth 1 -type d); do \
+		f=$$(basename $$file); \
+		ln --symbolic --force --no-dereference $$file $(HOME)/.config/$$f; \
+	done;
+
 .PHONY: dotfiles
 dotfiles:
 
