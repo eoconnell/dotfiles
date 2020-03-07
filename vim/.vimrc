@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC CONFIGURATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -36,8 +34,8 @@ filetype plugin indent on
 let mapleader=","
 
 " Git Gutter stuff
-nmap gh <Plug>GitGutterNextHunk
-nmap gH <Plug>GitGutterPrevHunk
+nmap gh <Plug>(GitGutterNextHunk)
+nmap gH <Plug>(GitGutterPrevHunk)
 
 " Split navigation
 nnoremap <c-j> <c-w>j

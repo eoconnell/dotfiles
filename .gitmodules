@@ -1,14 +1,14 @@
 [submodule "vim/.vim/bundle/vim-gitgutter"]
-	path = vim/.vim/bundle/vim-gitgutter
+	path = vim/.vim/pack/airblade/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "vim/.vim/bundle/vim-tomorrow-theme"]
 	path = vim/.vim/bundle/vim-tomorrow-theme
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "vim/.vim/bundle/vim-commentary"]
-	path = vim/.vim/bundle/vim-commentary
+	path = vim/.vim/pack/tpope/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/.vim/bundle/vim-fugitive"]
-	path = vim/.vim/bundle/vim-fugitive
+	path = vim/.vim/pack/tpope/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/.vim/bundle/vim-elixir"]
 	path = vim/.vim/bundle/vim-elixir

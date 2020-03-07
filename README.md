@@ -3,7 +3,7 @@
 **Install**
 
 ```bash
-$ make # or make dotfiles
+$ make install
 ```
 
 Executing `make` will create symlinks from this repo to your home folder.
