@@ -1,6 +1,7 @@
 .PHONY: install
 install:
 	stow bash
+	stow coc.nvim --no-folding
 	stow compton
 	stow fonts
 	stow git
@@ -17,6 +18,7 @@ install:
 .PHONY: uninstall
 uninstall:
 	stow -D bash
+	stow -D coc.nvim
 	stow -D compton
 	stow -D fonts
 	stow -D git
