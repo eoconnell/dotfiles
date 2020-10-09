@@ -65,3 +65,6 @@ export PS1
 
 PS2="\\[${yellow}\\]> \\[${reset}\\]"
 export PS2
+
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
