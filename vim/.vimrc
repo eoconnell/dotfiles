@@ -15,7 +15,7 @@ set hlsearch
 set ignorecase smartcase
 " highlight current line
 set cursorline
-set cmdheight=1
+set cmdheight=2
 set switchbuf=useopen
 set showtabline=2
 set winwidth=79
@@ -23,6 +23,7 @@ set winwidth=79
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
 set directory=~/.vim/swp//
+set updatetime=300
 
 " change cursor in insert mode
 let &t_SI = "\e[5 q"
@@ -46,7 +47,8 @@ nnoremap <c-l> <c-w>l
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " STATUS LINE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+" :set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " AUTOCMDS
@@ -105,8 +107,8 @@ function! InsertTabWrapper()
     return "\<c-p>"
   endif
 endfunction
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <s-tab> <c-n>
+" inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+" inoremap <s-tab> <c-n>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SELECTA <https://github.com/garybernhardt/selecta>
@@ -141,3 +143,31 @@ function! ToggleBackground()
 endfunction
 
 nnoremap <leader>bg :call ToggleBackground()<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CODE COMPLETION
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" highlight the symbol and its references when holding the cursor
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" rename a symbol
+nmap <leader>rn <Plug>(coc-rename)
+
+" trigger completion
+inoremap <silent><expr> <c-space> coc#refresh()
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1] =~# '\s'
+endfunction
