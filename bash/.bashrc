@@ -50,9 +50,14 @@ blue="\\e[1;34m"
 # cyan="\\e[1;36m"
 # white="\\e[1;37m"
 
+host_type="";
+if grep -q "^flags.* hypervisor" /proc/cpuinfo; then
+    host_type="☁️  ";
+fi
+
 PS1="\\[\\033]0;\\w\\007\\]"
 PS1+="\\n"
-PS1+="\\[${blue}\\]\\w "
+PS1+="\\[${blue}\\]${host_type}\\h \\w "
 PS1+="\$(__git_ps1 \"${reset}%s\")"
 PS1+="\\n"
 PS1+="\\[${red}\\]→ \\[${reset}\\]"
