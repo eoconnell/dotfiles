@@ -66,6 +66,9 @@ export PS1
 PS2="\\[${yellow}\\]> \\[${reset}\\]"
 export PS2
 
+# shellcheck disable=SC1091
 source /usr/local/share/chruby/chruby.sh
+# shellcheck disable=SC1091
 source /usr/local/share/chruby/auto.sh
+# shellcheck disable=SC1090
 source "$HOME/.cargo/env"
