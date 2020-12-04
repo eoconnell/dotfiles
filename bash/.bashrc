@@ -68,3 +68,4 @@ export PS2
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+source "$HOME/.cargo/env"
