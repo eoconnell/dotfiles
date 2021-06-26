@@ -147,6 +147,9 @@ nnoremap <leader>bg :call ToggleBackground()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CODE COMPLETION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" coc.nvim works best on vim >= 8.1.1719
+let g:coc_disable_startup_warning = 1
+
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
