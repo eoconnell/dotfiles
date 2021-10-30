@@ -59,10 +59,10 @@ fi
 
 PS1="\\[\\033]0;\\w\\007\\]"
 PS1+="\\n"
-PS1+="\\[${blue}\\]${host_type}\\h \\w "
+PS1+="${host_type}\\h \\w "
 PS1+="\$(__git_ps1 \"${reset}%s\")"
 PS1+="\\n"
-PS1+="\\[${red}\\]→ \\[${reset}\\]"
+PS1+="$ "
 export PS1
 
 PS2="\\[${yellow}\\]> \\[${reset}\\]"
