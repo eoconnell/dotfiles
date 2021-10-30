@@ -5,11 +5,6 @@ text-color:            white;
 font:                  "Hasklug Nerd Font Bold 9";
 }
 
-configuration {
-modi: "window,run,ssh";
-window-format: "{n}";
-}
-
 #window {
 anchor:     north;
 location:   north;
