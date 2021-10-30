@@ -6,7 +6,7 @@ URxvt*cursorBlink: true
 URxvt*borderWidth: 0
 URxvt*internalBorder: 16
 
-#include ".Xbase16/solarized_dark.Xresources"
+#include ".Xbase16/fogbell_light.Xresources"
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme

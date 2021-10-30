@@ -58,17 +58,17 @@ let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE)
 
 " Editor
-call <sid>hi('ColorColumn', s:none, s:voidGray1, 'none')
+call <sid>hi('ColorColumn', s:voidBlack, s:none, 'none')
 call <sid>hi('Cursor', s:voidSteel, s:voidBlack2, 'none')
-call <sid>hi('CursorColumn', s:none, s:voidGray1, 'none')
-call <sid>hi('CursorLine', s:none, s:voidGray1, 'none')
-call <sid>hi('CursorLineNr', s:voidBlack, s:voidGray1, 'none')
+call <sid>hi('CursorColumn', s:none, s:voidSteel, 'none')
+call <sid>hi('CursorLine', s:none, s:voidSteel, 'none')
+call <sid>hi('CursorLineNr', s:voidBlack, s:voidGray4, 'none')
 call <sid>hi('Directory', s:voidBlack, s:none, 'none')
 call <sid>hi('Folded', s:voidGray3, s:none, 'none')
 call <sid>hi('IncSearch', s:voidSteel, s:voidGold, 'none')
-call <sid>hi('LineNr', s:voidGray3, s:voidBlack2, 'none')
+call <sid>hi('LineNr', s:voidBlack2, s:none, 'none')
 call <sid>hi('MatchParen', s:voidBlack, s:voidGray4, 'none')
-call <sid>hi('Normal', s:voidBlack, s:voidSteel, 'none')
+call <sid>hi('Normal', s:voidBlack, s:none, 'none')
 call <sid>hi('Pmenu', s:voidBlack, s:voidGray4, 'none')
 call <sid>hi('PmenuSel', s:voidSteel, s:voidGray2, 'none')
 call <sid>hi('Search', s:voidSteel, s:voidGold, 'none')
@@ -76,6 +76,8 @@ call <sid>hi('StatusLine', s:voidSteel, s:voidBlack, 'none')
 call <sid>hi('StatusLineNC', s:voidGray3, s:voidBlack2, 'none')
 call <sid>hi('VertSplit', s:voidBlack, s:voidGray3, 'none')
 call <sid>hi('Visual', s:none, s:voidGray2, 'none')
+
+call <sid>hi('SignColumn', s:voidBlack, s:none, 'none')
 
 " General
 call <sid>hi('Boolean', s:voidBlack, s:none, 'none')
