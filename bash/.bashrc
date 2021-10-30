@@ -29,6 +29,8 @@ export EDITOR=vim
 
 export ACK_COLOR_MATCH='red'
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # shellcheck source=/dev/null
 source "${HOME}/.zsh/func/.git-prompt.sh"
 
