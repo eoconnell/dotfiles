@@ -67,6 +67,7 @@ augroup vimrcEx
   autocmd FileType ruby,haml,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
   autocmd FileType php set ai sw=4 sts=4 et
+  autocmd FileType go set sw=4 sts=4 et
 augroup END
 
 augroup FastEscape
