@@ -74,3 +74,5 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 # shellcheck disable=SC1090
 source "$HOME/.cargo/env"
+
+export PATH="$HOME/.local/bin:$PATH"
