@@ -21,5 +21,6 @@
   excludesfile = ~/.gitignore
 [init]
   templatedir = ~/.git_template
+  defaultBranch = trunk
 [diff]
 	submodule = log
