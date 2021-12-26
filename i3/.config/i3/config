@@ -28,7 +28,7 @@
 
 # WORKSPACES #############################
 
-  set $wsp1  "1 "
+  set $wsp1  1
   set $wsp2  2
   set $wsp3  3
   set $wsp4  4
