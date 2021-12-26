@@ -1,4 +1,6 @@
-URxvt.font: xft:Iosevka Term:style=Regular:pixelsize=14
+Xft.dpi:  192
+
+URxvt.font: xft:Iosevka Term:style=Regular:size=12
 
 URxvt.scrollBar: false
 URxvt*cursorBlink: true
