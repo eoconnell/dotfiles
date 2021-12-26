@@ -46,7 +46,7 @@
   floating_modifier $mod
 
   exec_always feh --bg-scale $wallpaper
-  exec_always --no-startup-id compton
+  #exec_always --no-startup-id compton
 
   # Tip: use xprop to find class names
   assign [class="Firefox"] $wsp1
