@@ -16,3 +16,6 @@
 [submodule "vim/.vim/pack/elixir-editors/start/vim-elixir"]
 	path = vim/.vim/pack/elixir-editors/start/vim-elixir
 	url = https://github.com/elixir-editors/vim-elixir.git
+[submodule "tmux/.config/tmux/plugins/tmux-resurrect"]
+	path = tmux/.config/tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect.git
