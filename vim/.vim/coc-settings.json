@@ -1,4 +1,5 @@
 {
   "rust-analyzer.serverPath": "/usr/local/bin/rust-analyzer",
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "python.venvPath": "./.venv"
 }
