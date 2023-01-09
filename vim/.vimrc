@@ -159,6 +159,8 @@ nmap <silent> gr <Plug>(coc-references)
 " highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+nmap <leader>i :<C-u> CocCommand editor.action.organizeImport<cr>
+
 " rename a symbol
 nmap <leader>rn <Plug>(coc-rename)
 
