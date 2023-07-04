@@ -17,11 +17,11 @@
 
   # hide_edge_borders both
 
-  # set $inner 32
-  # set $outer 16
+  set $inner 16
+  set $outer 16
 
-  # gaps inner $inner
-  # gaps outer $outer
+  gaps inner $inner
+  gaps outer $outer
 
   # bindsym $mod+g exec compton; gaps inner all set $inner; gaps outer all set $outer
   # bindsym $mod+Ctrl+g exec pkill compton; gaps inner all set 0; gaps outer all set 0
