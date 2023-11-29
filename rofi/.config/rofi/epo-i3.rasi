@@ -1,0 +1,42 @@
+@theme "Pop-Dark"
+
+configuration {
+  drun {
+    display-name: ">";
+  }
+}
+
+* {
+  text-color: #f2f2f2;
+  background-color: black;
+  font: "Hasklug Nerd Font Bold 10";
+}
+
+window {
+  location: south;
+  anchor: south;
+  height: 32;
+  y-offset: -22;
+  width: 100%;
+  children: [ horibox ];
+}
+
+element selected.normal {
+  background-color: gray;
+}
+
+horibox {
+  orientation: horizontal;
+  children: [ prompt, entry, listview ];
+}
+
+entry {
+  width: 10em;
+  expand: false;
+}
+
+listview {
+  layout: horizontal;
+  spacing: 5px;
+  require-input: true;
+}
