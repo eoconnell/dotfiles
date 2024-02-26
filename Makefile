@@ -13,6 +13,7 @@ install:
 	stow tmux
 	stow urxvt
 	stow vim
+	stow wezterm
 	stow xorg
 	stow zsh
 
@@ -31,6 +32,7 @@ uninstall:
 	stow -D tmux
 	stow -D urxvt
 	stow -D vim
+	stow -D wezterm
 	stow -D xorg
 	stow -D zsh
 
