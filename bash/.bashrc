@@ -74,9 +74,8 @@ source /usr/local/share/chruby/chruby.sh
 # shellcheck disable=SC1091
 source /usr/local/share/chruby/auto.sh
 # shellcheck disable=SC1090
-source "$HOME/.cargo/env"
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH:$HOME/.cargo/bin"
 export PATH="$HOME/go/bin:$PATH"
 
 export NVM_DIR="$HOME/.config/nvm"
