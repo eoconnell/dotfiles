@@ -75,7 +75,7 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 # shellcheck disable=SC1090
 
-export PATH="$HOME/.local/bin:$PATH:$HOME/.cargo/bin"
+export PATH="$HOME/.local/bin:$PATH:/opt/nvim-linux64/bin:$HOME/.cargo/bin"
 export PATH="$HOME/go/bin:$PATH"
 
 export NVM_DIR="$HOME/.config/nvm"
