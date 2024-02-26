@@ -6,6 +6,7 @@ install:
 	stow fonts
 	stow git
 	stow i3
+	stow nvim
 	stow rofi
 	stow screen
 	stow scripts
@@ -23,6 +24,7 @@ uninstall:
 	stow -D fonts
 	stow -D git
 	stow -D i3
+	stow -D nvim
 	stow -D rofi
 	stow -D screen
 	stow -D scripts
