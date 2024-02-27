@@ -1,0 +1,30 @@
+[colors]
+ansi = [
+  "#D0D0D0",
+  "#821A1A",
+  "#569F7A",
+  "#8E700B",
+  "#696E9B",
+  "#EA0BA4",
+  "#121212",
+  "#B0B0B0",
+]
+brights = [
+  "#49483E",
+  "#821A1A",
+  "#569F7A",
+  "#8E700B",
+  "#696E9B",
+  "#EA0BA4",
+  "#121212",
+  "#B0B0B0",
+]
+cursor_bg = "#121212"
+cursor_border = "#121212"
+cursor_fg = "#D0D0D0"
+foreground = "#121212"
+background = "#FCFCFC"
+
+[metadata]
+aliases = ["Fog Light"]
+name = "Fog Light"
