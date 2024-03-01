@@ -18,7 +18,7 @@ alias c="cd"
 alias v="view -"
 alias vi="vim"
 alias grep="grep --color"
-
+alias vim="nvim"
 
 export LESS='-R'
 
@@ -26,7 +26,7 @@ export HISTSIZE=100000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 
-export EDITOR=vim
+export EDITOR=nvim
 
 export ACK_COLOR_MATCH='red'
 
