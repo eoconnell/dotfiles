@@ -1,8 +1,12 @@
 return {
   {
-    'numToStr/Comment.nvim',
-    opts = {
-    },
-    lazy = false,
+    "airblade/vim-gitgutter"
+  },
+  {
+    "tpope/vim-fugitive",
+    cmd = "Git"
+  },
+  {
+    "tpope/vim-commentary"
   }
 }
