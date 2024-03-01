@@ -6,7 +6,7 @@
 
 # GENERAL ################################
 
-  set $mod Mod1
+  set $mod Mod4
   set $browser firefox
   set $term urxvt
   set $wallpaper ${HOME}/Pictures/wallpaper
