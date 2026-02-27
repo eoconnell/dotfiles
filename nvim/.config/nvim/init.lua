@@ -18,7 +18,7 @@ vim.opt.updatetime = 750
 
 vim.g.mapleader = ","
 
-vim.cmd [[colorscheme fogbell]]
+vim.cmd.colorscheme('fogbell')
 
 vim.cmd.highlight('clear SignColumn')
 
@@ -36,7 +36,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins")
+require("lazy").setup({
+  spec = "plugins",
+  change_detection = { notify = false }
+})
 
 -- LSP configuration
 vim.api.nvim_create_autocmd('LspAttach', {
