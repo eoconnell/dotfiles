@@ -4,6 +4,7 @@ install:
 	stow coc.nvim --no-folding
 	stow compton
 	stow fonts
+	stow ghostty
 	stow git
 	stow i3
 	stow nvim
@@ -23,6 +24,7 @@ uninstall:
 	stow -D coc.nvim
 	stow -D compton
 	stow -D fonts
+	stow -D ghostty
 	stow -D git
 	stow -D i3
 	stow -D nvim

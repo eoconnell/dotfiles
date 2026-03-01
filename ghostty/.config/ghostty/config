@@ -1,0 +1,4 @@
+# use normal i3 borders
+window-decoration = server
+# block cursor in bash
+shell-integration-features = no-cursor
