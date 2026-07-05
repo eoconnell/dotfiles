@@ -7,6 +7,7 @@
 # GENERAL ################################
 
   set $mod Mod4
+  set $alt Mod1
   set $browser firefox
   set $term ghostty
   set $wallpaper ${HOME}/Pictures/wallpaper
@@ -116,6 +117,13 @@
   bindsym XF86AudioPause exec playerctl pause
   bindsym XF86AudioNext  exec playerctl next
   bindsym XF86AudioPrev  exec playerctl previous
+
+  # save screenshot
+  bindsym $alt+Shift+3 exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+  bindsym $alt+Shift+4 exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+  # copy screenshot
+  bindsym Control+Shift+3 exec --no-startup-id maim | xclip -selection clipboard -t image/png
+  bindsym Control+Shift+4 exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 # workspace bindings
   bindsym $mod+1 workspace $wsp1
